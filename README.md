@@ -1,4 +1,4 @@
-# 🛠️ MCP Server (Python)
+# 🛠️ mcp-opentym
 
 A lightweight **Model Context Protocol (MCP) HTTP server** built with the official Python MCP SDK and Streamable HTTP transport. Designed to give AI assistants (Claude, Cursor, etc.) real tools to interact with your Windows machine.
 
@@ -35,8 +35,8 @@ A lightweight **Model Context Protocol (MCP) HTTP server** built with the offici
 ### 1. Clone & setup
 
 ```bash
-git clone https://github.com/doanhtuan123/anhtuan14402.git
-cd anhtuan14402
+git clone https://github.com/doanhtuan123/mcp-server-python.git
+cd mcp-server-python
 python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
@@ -49,7 +49,7 @@ playwright install chromium
 python server.py
 ```
 
-Server starts at: `http://localhost:3458/mcp`
+Server starts at: `http://localhost:3458/mcp`  
 Health check: `http://localhost:3458/health`
 
 ### 3. Public tunnel (optional)
@@ -95,7 +95,7 @@ Add to `claude_desktop_config.json`:
 ```json
 {
   "mcpServers": {
-    "my-mcp": {
+    "mcp-opentym": {
       "url": "http://localhost:3458/mcp"
     }
   }
@@ -107,7 +107,7 @@ Or with the public tunnel URL:
 ```json
 {
   "mcpServers": {
-    "my-mcp": {
+    "mcp-opentym": {
       "url": "https://<your-tunnel>.trycloudflare.com/mcp"
     }
   }
@@ -119,7 +119,7 @@ Or with the public tunnel URL:
 ## 🗂️ Project Structure
 
 ```
-mcp-server-py/
+mcp-server-python/
 ├── server.py          # Main MCP server
 ├── tunnel.py          # Cloudflare Quick Tunnel helper
 ├── requirements.txt   # Python dependencies
