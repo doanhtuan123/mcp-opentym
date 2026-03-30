@@ -1,0 +1,39 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Data / runtime
+data/tunnel-url.txt
+data/*.log
+data/*.json
+
+# Secrets & env
+.env
+.env.*
+!.env.example
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Docs build
+MCP.docx
+*.docx
+
+# Workspace runtime files (screenshots, personal data)
+workspace/
+~$*
